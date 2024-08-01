@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+:root {
+  --second-color: #bfe8e8;
+}
+::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.4rem;
+}
+::-webkit-scrollbar-button {
+  background: #ccc;
+}
+::-webkit-scrollbar-track-piece {
+  background: #888;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+​ body {
+  /* font-family: "Playwrite MX", cursive; */
+  font-family: "Poppins", sans-serif;
+  height: 120vh;
+}
+.arkan_content {
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.heading_container {
+  height: 100%;
+}
+.heading_container header {
+  height: 100vh;
+}
+@media only screen and (max-width: 1400px) {
+  nav {
+    display: none;
+  }
+  #visit_img {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  nav {
+    display: flex;
+  }
+  #navigation {
+    display: none;
+  }
+  .heading_content {
+    display: none;
+  }
+  header {
+    display: block;
+  }
+  #visit_img {
+    display: flex;
+  }
+}
+.navigation_left div h3 {
+  font-family: "Playwrite IT Moderna", cursive;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.navigation_left ul li a , .navigation_left ul li button {
+  color: #373737;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  transition: color 0.2s ease-in;
+}
+.navigation_left ul li a:hover {
+  color: #242424;
+}
+.search input {
+  border: 1px solid #242424;
+  padding: 0 0.4rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 1.8rem;
+}
+.search input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #606060;
+  font-size: 0.85rem;
+}
+.logo_icons img {
+  background-color: #ffffff;
+  border-radius: 47% 53% 51% 49% / 63% 44% 56% 37%;
+  padding: 0.35rem;
+  box-shadow: 0px 2px 2px 0px #dcdcdc;
+  cursor: pointer;
+}
+.search img {
+  margin-left: -2.1rem;
+  padding-right: 5px;
+}
+.header_left h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+.header_left h1 {
+  font-family: "Playwrite IT Moderna", cursive;
+  color: rgb(82, 81, 81);
+  text-shadow: #f4cfcd 2px -5px;
+  font-size: 4.5rem;
+}
+.header_left p {
+  color: #373737;
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+.header_right img {
+  display: block;
+  border-radius: 55% 45% 28% 72% / 70% 43% 57% 30%;
+}
+.travel_button button {
+  background-color:#dadada;
+  border-radius: .5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: .9rem;
+  font-family: "Poppins", sans-serif;
+}
+.travel_plan {
+  background-color: var(--second-color);
+  padding:.5rem 2rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-size: .95rem;
+}
+.dropdown_menu{
+  z-index: 999;
+  background-color: #fff;
+}
+.travel_button button:hover {
+  background-color: var(--second-color);
+}
+nav .arrow_down {
+  display: flex;
+  background-color: var(--second-color);
+  border-radius: 47% 53% 51% 49% / 63% 44% 56% 37%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+nav .arrow_down p {
+  display: flex;
+  width: 0px;
+}
+nav .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebe9e9;
+  border-radius: 47% 53% 51% 49% / 63% 44% 56% 37%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+nav .logo_title h3 {
+  /* font-family: "Playwrite MX", cursive; */
+  font-family: "Playwrite IT Moderna", cursive;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.header_link_content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
+  flex-wrap: wrap;
+}
+.visit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.visit img {
+  display: block;
+  max-width: 350px;
+  height: 100%;
+  border-radius: 64% 36% 41% 59% / 45% 43% 57% 55%;
+  animation: visited_image 5s ease-in 0s infinite;
+}
+@keyframes visited_image {
+  20% {
+    border-radius: 64% 36% 76% 24% / 45% 43% 57% 55%;
+  }
+  40% {
+    border-radius: 64% 36% 38% 62% / 45% 43% 57% 55%;
+  }
+  60% {
+    border-radius: 64% 36% 38% 62% / 48% 43% 57% 52%;
+  }
+  80% {
+    border-radius: 42% 58% 38% 62% / 48% 44% 56% 52%;
+  }
+  100% {
+    border-radius: 42% 58% 38% 62% / 60% 29% 71% 40%;
+  }
+}
+header {
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+}
+header h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+header h1 {
+  font-family: "Playwrite IT Moderna", cursive;
+  color: rgb(82, 81, 81);
+  text-shadow: #f4cfcd 2px -5px;
+  font-size: 3.5rem;
+}
+header p {
+  color: #373737;
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+.header_link_content a {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+.header_link_content a p {
+  font-size: 0.9rem;
+  color: #000;
+}
+
+section {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 110vh;
+  padding: 1rem 1rem;
+  border-radius: 0.6rem;
+  background-color: #fff;
+  margin: 1rem 0.5rem;
+  box-shadow: 0px 0px 10px 0px rgb(203, 202, 202);
+  z-index: 999;
+}
+section .menu_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+.menu_button .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--second-color);
+  border-radius: 47% 53% 51% 49% / 63% 44% 56% 37%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+section div {
+  margin: 0.5rem 0;
+}
+section div h4 {
+  margin: 0.6rem 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+section div button {
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0.5rem 0.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  transition: background-color 0.4s ease-in;
+}
+section div button:hover {
+  background-color: var(--second-color);
+}
+section div p {
+  color: #737373;
+  font-size: 0.9rem;
+  text-align: left;
+  margin-top: 0.3rem;
+}
+.section_active {
+  display: block;
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+}
+
+.most_visited_places {
+  padding: 1rem 1rem;
+}
+.most_visited_places h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.most_visited_places .visited_places {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.most_visited_places .visited_places div {
+  position: relative;
+  background-color: #bfe8e8;
+  width: 200px;
+  height: 90px;
+  padding: 0.8rem 1.25rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+.most_visited_places .visited_places div h4 {
+  font-weight: 600;
+}
+.most_visited_places .visited_places div p {
+  color: #606060;
+  font-size: 0.9rem;
+}
+.most_visited_places .visited_places div svg {
+  background-color: #fff;
+  width: 30px;
+  border-radius: 0.5rem;
+  padding: 0 0.3rem;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+  cursor: pointer;
+}
+.visited_location {
+  margin-top: 1rem;
+}
+.visited_location button {
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0.5rem 0.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  transition: background-color 0.4s ease-in;
+}
+.visited_location button:hover {
+  background-color: var(--second-color);
+}
+.gallery {
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+}
+.gallery h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.weather {
+  background-color: #f5f4f2;
+  padding: 1rem 1rem;
+}
+.weather div h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.weather div p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+.weather .image_content {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 1rem;
+}
+.weather .image_content img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+.traditional_greeting {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+.traditional_greeting div h5 {
+  color: #000;
+  font-weight: 500;
+}
+.traditional_greeting div p {
+  color: #373737;
+  font-family: "Dancing Script", cursive;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+footer {
+  margin-top: 3rem;
+  background-color: #f0e8e7;
+  padding: 1rem;
+}
+footer .left {
+  margin-bottom: 1rem;
+}
+footer .left h3 {
+  font-family: "Playwrite IT Moderna", cursive;
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+footer .left p {
+  color: #373737;
+  font-size: 0.9rem;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+form input {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 11rem;
+  border: none;
+  outline: none;
+}
+form input:focus {
+  border: none;
+  outline: none;
+}
+form input::placeholder {
+  color: #000;
+  font-family: "Playwrite IT Moderna", cursive;
+}
+form button {
+  background-color: #f1bc68;
+  width: 100%;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+}
+footer .right {
+  position: relative;
+}
+footer .footer_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+footer .footer_links div h3 {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+footer .footer_links div p {
+  line-height: 2rem;
+  font-size: 0.9rem;
+  color: #373737;
+}
+footer .footer_links .contact .contact_icon {
+  display: flex;
+  gap: 1rem;
+}
+footer .footer_links .contact .contact_icon div {
+  background-color: #fff;
+  display: block;
+  border-radius: .25rem;
+  padding:.3rem .5rem;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+
+}
+footer .footer_links .contact .contact_icon div:hover{
+  background-color: var(--second-color);
+}
+
+footer .footer_title {
+  color: #373737;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+}
+.beaches,
+.languages,
+.religion {
+  padding: 1rem;
+}
+.beaches h3,
+.food h3,
+.languages h3,
+.religion h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: 600;
+}
+.beaches p,
+.languages p,
+.food p,
+.religion p {
+  color: #606060;
+  margin: 1rem 0;
+  line-height: 2rem;
+  font-size: 0.9rem;
+}
+
+.religion .religion_content header h5 {
+  cursor: pointer;
+}
+header:first-child p {
+  color: blue;
+  opacity: 0;
+  height: 0px;
+}
+.travel_plan_img{
+   background-image: url('https://static.saltinourhair.com/wp-content/uploads/2020/07/23113113/SA70650-917x810.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 10rem;
+   border-radius: .5rem;
+   opacity: 0.8;
+}
+.travel_details h6 {
+   font-weight: 500;
+   font-family: "Poppins", sans-serif;
+   font-size: .9rem;
+}
+.travel_details p {
+  color: #606060;
+  font-family: "Poppins", sans-serif;
+  font-size: .8rem;
+}
+.letter{
+  font-size: .9em;
+}
+.letter::placeholder {
+  padding-left: .5rem;
+}
